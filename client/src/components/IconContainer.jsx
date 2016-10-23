@@ -1,5 +1,5 @@
 var React = require('react');
-var IconComponent = require('./IconComponent.jsx')
+var IconComponent = require('./IconComponent.jsx');
 
 var IconContainer = React.createClass({
 

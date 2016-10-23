@@ -6,7 +6,7 @@ var IconContainer = require('./IconContainer.jsx');
 var ItemContainer = React.createClass({
 
   getInitialState: function(){
-    return{items: [], selectedItem: {name: "select an item", description: "", quote:""}}
+    return{items: [], selectedItem: {name: "select an item", description: "", quote:"", target: ""}}
   },
 
   componentDidMount: function(){
@@ -25,7 +25,7 @@ var ItemContainer = React.createClass({
   },
 
   itemClicked: function(clicked){
-    var selectedItem = {name: clicked.name, description: clicked.description, quote: clicked.quote}
+    var selectedItem = {name: clicked.name, description: clicked.description, quote: clicked.quote, target: clicked.target}
     this.setState({selectedItem: selectedItem})
   },
 
